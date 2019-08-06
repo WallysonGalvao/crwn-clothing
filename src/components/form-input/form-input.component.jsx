@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
-import "./form-input.styles.scss";
+import './form-input.styles.scss';
 
-const FormImput = ({ handleChange, label, ...othersProps }) => (
-  <div className="group">
-    <input className="form-input" onChange={handleChange} {...othersProps} />
+const FormInput = ({ handleChange, label, ...otherProps }) => (
+  <div className='group'>
+    <input className='form-input' onChange={handleChange} {...otherProps} />
     {label ? (
       <label
         className={`${
-          othersProps.value.length ? "shrink" : ""
+          otherProps.value.length ? 'shrink' : ''
         } form-input-label`}
       >
         {label}
@@ -17,4 +17,4 @@ const FormImput = ({ handleChange, label, ...othersProps }) => (
   </div>
 );
 
-export default FormImput;
+export default FormInput;
